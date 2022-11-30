@@ -66,7 +66,13 @@ void	Diccionario			(char *szNombre, char szPalabras[][TAMTOKEN], int iEstadistic
 				de arriba y solo va almacenar una sola palabra*/
 				caracterszNombre++;
 			}
-			
+		}
+		/*solo va a poder salir del while en cunato acabe el arreglo ahora solo queda ordenar las palabras alfabeticamente e
+		e identificar las palabras que se repiten*/
+		for (int i = 0; i < caracterszNombre; i++)
+		{
+			for (int posicionDelantera = 1; posicionDelantera < caracterszNombre; posicionDelantera++)
+			{
 }
 
 /*****************************************************************************************************************
