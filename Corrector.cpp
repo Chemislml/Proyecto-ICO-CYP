@@ -1,9 +1,9 @@
 
-
-
 #include "stdafx.h"
 #include <string.h>
 #include "corrector.h"
+#define TAMTOKEN 50
+
 //Funciones publicas del proyecto
 /*****************************************************************************************************************
 	DICCIONARIO: Esta funcion crea el diccionario completo
@@ -19,6 +19,8 @@ void	Diccionario			(char *szNombre, char szPalabras[][TAMTOKEN], int iEstadistic
 	iNumElementos=1;
 	strcpy(szPalabras[0],"AquiVaElDiccionario");
 	iEstadisticas[0] = 1; // la primer palabra aparece solo una vez.
+
+	FILE* archivo;
 }
 
 /*****************************************************************************************************************
