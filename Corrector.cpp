@@ -35,6 +35,11 @@ void	Diccionario			(char *szNombre, char szPalabras[][TAMTOKEN], int iEstadistic
 			}
 			fclose(archivo);
 		}
+
+		int caracterszNombre, numpalabra = 0, j = 0;
+		char szpalabrasinorden[][TAMTOKEN]{ 'hola','pepe','C' };
+		char arrayAxiliar[TAMTOKEN];
+		struct PALABRA_CON_FREC
 }
 
 /*****************************************************************************************************************
