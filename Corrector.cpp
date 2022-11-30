@@ -21,6 +21,20 @@ void	Diccionario			(char *szNombre, char szPalabras[][TAMTOKEN], int iEstadistic
 	iEstadisticas[0] = 1; // la primer palabra aparece solo una vez.
 
 	FILE* archivo;
+
+		char textoEnBruto[700];
+
+		//Leer todo el archivo hasta su final, guardando todo el texto del mismo en un arr|ay
+		while (!feof(archivo))
+		{
+			for (int i = 0; i != NUMPALABRAS; i++)
+			{
+				//fgets(texto[i], NUMPALABRAS, archivo);
+				fscanf(archivo, "%s", textoEnBruto[i]);
+				//printf("%s\n", texto[i]);
+			}
+			fclose(archivo);
+		}
 }
 
 /*****************************************************************************************************************
