@@ -55,7 +55,10 @@ void	Diccionario			(char *szNombre, char szPalabras[][TAMTOKEN], int iEstadistic
 				//en este caso lo que pasa es que toma el valor caracterszNombre y despues de usar el valor le suma 1 a el valor
 				szpalabrasinorden[numpalabra][caracterszNombre++] = szNombre[caracterszNombre];
 			}
-
+			//se salio de este ciclo porque encontro un carater que debe de evitar
+			caracterszNombre = '\0';
+			numpalabra++;
+			
 }
 
 /*****************************************************************************************************************
