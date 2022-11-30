@@ -44,6 +44,10 @@ void	Diccionario			(char *szNombre, char szPalabras[][TAMTOKEN], int iEstadistic
 			char laPalabra[TAMTOKEN];
 				int frecuencia = 1;
 			}unaPalabra;
+
+		//empezar a separar el array palabra por palabra en un array exclusivo para cada palabra
+		while (szNombre[caracterszNombre] != '\0')
+		{
 }
 
 /*****************************************************************************************************************
