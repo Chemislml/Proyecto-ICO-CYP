@@ -73,6 +73,13 @@ void	Diccionario			(char *szNombre, char szPalabras[][TAMTOKEN], int iEstadistic
 		{
 			for (int posicionDelantera = 1; posicionDelantera < caracterszNombre; posicionDelantera++)
 			{
+				if (strcmp(szpalabrasinorden[i], szpalabrasinorden[posicionDelantera]) == 0)
+					/*esto es en caso de que las palabras son iguales, deja vacia a tabla[posicionDelantera] y a la
+					frecuencia le suma 1*/
+				{
+					szpalabrasinorden[posicionDelantera][0] = '\0';
+					unaPalabra.frecuencia++;
+				}
 }
 
 /*****************************************************************************************************************
