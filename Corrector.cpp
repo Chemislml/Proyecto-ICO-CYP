@@ -48,6 +48,14 @@ void	Diccionario			(char *szNombre, char szPalabras[][TAMTOKEN], int iEstadistic
 		//empezar a separar el array palabra por palabra en un array exclusivo para cada palabra
 		while (szNombre[caracterszNombre] != '\0')
 		{
+			caracterszNombre = 0;
+			//va a evitar tomar como valido cararcteres vacios y signos de puntuación
+			while (caracterszNombre != ' ' && caracterszNombre != '\0' && caracterszNombre != '	' && caracterszNombre != ',' && caracterszNombre != '.' && caracterszNombre != '(' && caracterszNombre != ')' && caracterszNombre != '¿' && caracterszNombre != '?' && caracterszNombre != '!' && caracterszNombre != '¡')
+			{
+				//en este caso lo que pasa es que toma el valor caracterszNombre y despues de usar el valor le suma 1 a el valor
+				szpalabrasinorden[numpalabra][caracterszNombre++] = szNombre[caracterszNombre];
+			}
+
 }
 
 /*****************************************************************************************************************
