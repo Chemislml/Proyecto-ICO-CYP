@@ -40,6 +40,10 @@ void	Diccionario			(char *szNombre, char szPalabras[][TAMTOKEN], int iEstadistic
 		char szpalabrasinorden[][TAMTOKEN]{ 'hola','pepe','C' };
 		char arrayAxiliar[TAMTOKEN];
 		struct PALABRA_CON_FREC
+		{
+			char laPalabra[TAMTOKEN];
+				int frecuencia = 1;
+			}unaPalabra;
 }
 
 /*****************************************************************************************************************
