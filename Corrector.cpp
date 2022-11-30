@@ -58,6 +58,14 @@ void	Diccionario			(char *szNombre, char szPalabras[][TAMTOKEN], int iEstadistic
 			//se salio de este ciclo porque encontro un carater que debe de evitar
 			caracterszNombre = '\0';
 			numpalabra++;
+
+			if (szNombre[caracterszNombre] != '\0')
+			{
+				/*esta linea es necesaria para hacer que recorra la siguiente casilla del
+				arreglo ya que si se deja en la misma casilla nuca más va entar al while
+				de arriba y solo va almacenar una sola palabra*/
+				caracterszNombre++;
+			}
 			
 }
 
